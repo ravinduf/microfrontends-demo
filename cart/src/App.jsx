@@ -3,22 +3,7 @@ import ReactDOM from "react-dom";
 
 import "remixicon/fonts/remixicon.css";
 
-import "./index.scss";
+import MainLayout from "home/MainLayout";
 
-import Header from "home/Header";
-import Footer from "home/Footer";
-import CartContent from "./CartContent";
 
-const App = () => (
-  <div className="mt-10 mx-auto max-w-6xl">
-    <Header />
-    <div className="my-10">
-      <CartContent />
-    </div>
-    <Footer />
-  </div>
-);
-
-ReactDOM.render(
-    <App />,
-  document.getElementById("app"));
+ReactDOM.render(<MainLayout/>, document.getElementById("app"));
